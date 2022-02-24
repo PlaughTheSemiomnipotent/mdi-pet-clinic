@@ -4,8 +4,9 @@ import java.util.Set;
 
 import com.MDI747.mdipetclinic.model.Owner;
 import com.MDI747.mdipetclinic.services.CrudService;
+import com.MDI747.mdipetclinic.services.OwnerService;
 
-public class OwnerServiceMap extends AbstractMapService<Owner, Long> implements CrudService<Owner, Long> {
+public class OwnerServiceMap extends AbstractMapService<Owner, Long> implements OwnerService {
 
 	@Override
 	public Set<Owner> findAll() {
@@ -30,5 +31,10 @@ public class OwnerServiceMap extends AbstractMapService<Owner, Long> implements 
 	@Override
 	public void delete(Owner object) {
 		super.delete(object);
+	}
+	
+	@Override
+	public Owner findByLastName(String lastName) {
+		return null;
 	}
 }
