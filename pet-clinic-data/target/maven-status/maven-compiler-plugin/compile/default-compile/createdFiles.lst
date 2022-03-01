@@ -6,9 +6,13 @@ com\MDI747\mdipetclinic\services\CrudService.class
 com\MDI747\mdipetclinic\services\map\PetServiceMap.class
 com\MDI747\mdipetclinic\services\VetService.class
 com\MDI747\mdipetclinic\model\BaseEntity.class
+com\MDI747\mdipetclinic\services\PetTypeService.class
 com\MDI747\mdipetclinic\services\map\AbstractMapService.class
 com\MDI747\mdipetclinic\services\map\VetServiceMap.class
 com\MDI747\mdipetclinic\services\map\OwnerServiceMap.class
+com\MDI747\mdipetclinic\services\map\PetTypeServiceMap.class
 com\MDI747\mdipetclinic\model\Owner.class
+com\MDI747\mdipetclinic\model\Specialty.class
 com\MDI747\mdipetclinic\services\OwnerService.class
 com\MDI747\mdipetclinic\model\Pet.class
+com\MDI747\mdipetclinic\model\Visit.class
