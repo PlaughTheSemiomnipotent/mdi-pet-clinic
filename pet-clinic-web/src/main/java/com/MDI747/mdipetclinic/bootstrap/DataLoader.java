@@ -74,7 +74,7 @@ public class DataLoader implements CommandLineRunner {
 
 		ownerService.save(owner2);
 
-		System.out.println("Loaded Owners...");
+		System.out.println("Loaded Owners and Pets...");
 
 		Vet vet1 = new Vet();
 		vet1.setFirstName("Sam");

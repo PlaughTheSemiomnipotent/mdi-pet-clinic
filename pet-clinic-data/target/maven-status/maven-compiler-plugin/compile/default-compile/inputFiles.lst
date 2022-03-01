@@ -1,4 +1,5 @@
 C:\SourceCode\mdi-pet-clinic\pet-clinic-data\src\main\java\com\MDI747\mdipetclinic\services\map\PetTypeServiceMap.java
+C:\SourceCode\mdi-pet-clinic\pet-clinic-data\src\main\java\com\MDI747\mdipetclinic\services\SpecialtyService.java
 C:\SourceCode\mdi-pet-clinic\pet-clinic-data\src\main\java\com\MDI747\mdipetclinic\services\map\VetServiceMap.java
 C:\SourceCode\mdi-pet-clinic\pet-clinic-data\src\main\java\com\MDI747\mdipetclinic\services\VetService.java
 C:\SourceCode\mdi-pet-clinic\pet-clinic-data\src\main\java\com\MDI747\mdipetclinic\model\BaseEntity.java
@@ -12,6 +13,7 @@ C:\SourceCode\mdi-pet-clinic\pet-clinic-data\src\main\java\com\MDI747\mdipetclin
 C:\SourceCode\mdi-pet-clinic\pet-clinic-data\src\main\java\com\MDI747\mdipetclinic\model\Pet.java
 C:\SourceCode\mdi-pet-clinic\pet-clinic-data\src\main\java\com\MDI747\mdipetclinic\services\OwnerService.java
 C:\SourceCode\mdi-pet-clinic\pet-clinic-data\src\main\java\com\MDI747\mdipetclinic\model\Specialty.java
+C:\SourceCode\mdi-pet-clinic\pet-clinic-data\src\main\java\com\MDI747\mdipetclinic\services\map\SpecialtyServiceMap.java
 C:\SourceCode\mdi-pet-clinic\pet-clinic-data\src\main\java\com\MDI747\mdipetclinic\model\Vet.java
 C:\SourceCode\mdi-pet-clinic\pet-clinic-data\src\main\java\com\MDI747\mdipetclinic\model\Visit.java
 C:\SourceCode\mdi-pet-clinic\pet-clinic-data\src\main\java\com\MDI747\mdipetclinic\services\PetService.java

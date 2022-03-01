@@ -1,3 +1,4 @@
+com\MDI747\mdipetclinic\services\map\SpecialtyServiceMap.class
 com\MDI747\mdipetclinic\model\Vet.class
 com\MDI747\mdipetclinic\model\PetType.class
 com\MDI747\mdipetclinic\model\Person.class
@@ -5,6 +6,7 @@ com\MDI747\mdipetclinic\services\PetService.class
 com\MDI747\mdipetclinic\services\CrudService.class
 com\MDI747\mdipetclinic\services\map\PetServiceMap.class
 com\MDI747\mdipetclinic\services\VetService.class
+com\MDI747\mdipetclinic\services\SpecialtyService.class
 com\MDI747\mdipetclinic\model\BaseEntity.class
 com\MDI747\mdipetclinic\services\PetTypeService.class
 com\MDI747\mdipetclinic\services\map\AbstractMapService.class
