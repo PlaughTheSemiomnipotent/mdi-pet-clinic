@@ -3,28 +3,41 @@ package com.MDI747.mdipetclinic.model;
 import java.time.LocalDate;
 
 public class Pet extends BaseEntity {
+	private String name;
 	private LocalDate birthDate;
-	private PetType type;
-	private Owner owndr;
-	
+	private PetType petType;
+	private Owner owner;
+
+	public String getName() {
+		return name;
+	}
+
+	public void setName(String name) {
+		this.name = name;
+	}
+
 	public LocalDate getBirthDate() {
 		return birthDate;
 	}
+
 	public void setBirthDate(LocalDate birthDate) {
 		this.birthDate = birthDate;
 	}
-	public PetType getType() {
-		return type;
+
+	public PetType getPetType() {
+		return petType;
 	}
-	public void setType(PetType type) {
-		this.type = type;
+
+	public void setPetType(PetType petType) {
+		this.petType = petType;
 	}
-	public Owner getOwndr() {
-		return owndr;
+
+	public Owner getOwner() {
+		return owner;
 	}
-	public void setOwndr(Owner owndr) {
-		this.owndr = owndr;
+
+	public void setOwner(Owner owner) {
+		this.owner = owner;
 	}
-	
-	
+
 }

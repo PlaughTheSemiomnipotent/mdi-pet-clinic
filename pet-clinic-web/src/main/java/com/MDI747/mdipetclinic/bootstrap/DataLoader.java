@@ -1,9 +1,12 @@
 package com.MDI747.mdipetclinic.bootstrap;
 
+import java.time.LocalDate;
+
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.stereotype.Component;
 
 import com.MDI747.mdipetclinic.model.Owner;
+import com.MDI747.mdipetclinic.model.Pet;
 import com.MDI747.mdipetclinic.model.PetType;
 import com.MDI747.mdipetclinic.model.Vet;
 import com.MDI747.mdipetclinic.services.OwnerService;
@@ -42,11 +45,33 @@ public class DataLoader implements CommandLineRunner {
 		Owner owner1 = new Owner();
 		owner1.setFirstName("Michael");
 		owner1.setLastName("Weston");
+		owner1.setAddress("123 Brickel Ave");
+		owner1.setCity("Miami");
+		owner1.setTelephone("1231231234");
+
+		Pet mikesPet = new Pet();
+		mikesPet.setPetType(savedDogPetType);
+		mikesPet.setOwner(owner1);
+		mikesPet.setBirthDate(LocalDate.now());
+		mikesPet.setName("Rosco");
+		owner1.getPets().add(mikesPet);
+
 		ownerService.save(owner1);
 
 		Owner owner2 = new Owner();
 		owner2.setFirstName("Fiona");
 		owner2.setLastName("Glenanne");
+		owner2.setAddress("123 Brickel Ave");
+		owner2.setCity("Miami");
+		owner2.setTelephone("1231231234");
+
+		Pet fionnasPet = new Pet();
+		fionnasPet.setPetType(savedCatPetType);
+		fionnasPet.setOwner(owner2);
+		fionnasPet.setBirthDate(LocalDate.now());
+		fionnasPet.setName("Just Cat");
+		owner1.getPets().add(fionnasPet);
+
 		ownerService.save(owner2);
 
 		System.out.println("Loaded Owners...");
