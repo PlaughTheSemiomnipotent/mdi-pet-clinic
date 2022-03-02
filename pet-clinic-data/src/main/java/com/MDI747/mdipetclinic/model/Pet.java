@@ -21,6 +21,9 @@ public class Pet extends BaseEntity {
 	@ManyToOne
 	@JoinColumn(name = "owner_id")
 	private Owner owner;
+	
+	@OneToMany(cascade = CascadeType.All, mappedBy = "pet")
+	private Set<Visit> visits = new HashSet<>();
 
 	public String getName() {
 		return name;
