@@ -1,7 +1,6 @@
 package com.MDI747.mdipetclinic.model;
 
-import javax.persistence.Column;
-import javax.persistence.MappedSuperclass;
+import javax.persistence.*;
 
 @MappedSuperclass
 public class Person extends BaseEntity {
