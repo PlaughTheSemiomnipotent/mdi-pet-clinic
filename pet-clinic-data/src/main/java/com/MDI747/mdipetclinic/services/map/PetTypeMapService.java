@@ -4,24 +4,24 @@ import java.util.Set;
 
 import org.springframework.stereotype.Service;
 
-import com.MDI747.mdipetclinic.model.Pet;
-import com.MDI747.mdipetclinic.services.PetService;
+import com.MDI747.mdipetclinic.model.PetType;
+import com.MDI747.mdipetclinic.services.PetTypeService;
 
 @Service
-public class PetServiceMap extends AbstractMapService<Pet, Long> implements PetService {
+public class PetTypeMapService extends AbstractMapService<PetType, Long> implements PetTypeService {
 
 	@Override
-	public Set<Pet> findAll() {
+	public Set<PetType> findAll() {
 		return super.findAll();
 	}
 
 	@Override
-	public Pet findById(Long id) {
+	public PetType findById(Long id) {
 		return super.findById(id);
 	}
 
 	@Override
-	public Pet save(Pet object) {
+	public PetType save(PetType object) {
 		return super.save(object);
 	}
 
@@ -31,7 +31,8 @@ public class PetServiceMap extends AbstractMapService<Pet, Long> implements PetS
 	}
 
 	@Override
-	public void delete(Pet object) {
+	public void delete(PetType object) {
 		super.delete(object);
 	}
+
 }
