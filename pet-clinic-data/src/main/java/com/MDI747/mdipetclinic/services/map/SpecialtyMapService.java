@@ -2,12 +2,14 @@ package com.MDI747.mdipetclinic.services.map;
 
 import java.util.Set;
 
+import org.springframework.context.annotation.Profile;
 import org.springframework.stereotype.Service;
 
 import com.MDI747.mdipetclinic.model.Specialty;
 import com.MDI747.mdipetclinic.services.SpecialtyService;
 
 @Service
+@Profile({ "default", "map" })
 public class SpecialtyMapService extends AbstractMapService<Specialty, Long> implements SpecialtyService {
 
 	@Override
