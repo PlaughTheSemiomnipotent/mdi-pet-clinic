@@ -16,7 +16,6 @@ public class VetJpaService implements VetService {
 	private final VetRepository vetRepository;
 
 	public VetJpaService(VetRepository vetRepository) {
-		super();
 		this.vetRepository = vetRepository;
 	}
 
