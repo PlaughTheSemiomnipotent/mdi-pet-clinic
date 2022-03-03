@@ -10,10 +10,12 @@ import com.MDI747.mdipetclinic.model.Pet;
 import com.MDI747.mdipetclinic.model.PetType;
 import com.MDI747.mdipetclinic.model.Specialty;
 import com.MDI747.mdipetclinic.model.Vet;
+import com.MDI747.mdipetclinic.model.Visit;
 import com.MDI747.mdipetclinic.services.OwnerService;
 import com.MDI747.mdipetclinic.services.PetTypeService;
 import com.MDI747.mdipetclinic.services.SpecialtyService;
 import com.MDI747.mdipetclinic.services.VetService;
+import com.MDI747.mdipetclinic.services.VisitService;
 
 @Component
 public class DataLoader implements CommandLineRunner {
@@ -22,13 +24,15 @@ public class DataLoader implements CommandLineRunner {
 	private final VetService vetService;
 	private final PetTypeService petTypeService;
 	private final SpecialtyService specialtyService;
+	private final VisitService visitService;
 
 	public DataLoader(OwnerService ownerService, VetService vetService, PetTypeService petTypeService,
-			SpecialtyService specialtyService) {
+			SpecialtyService specialtyService, VisitService visitService) {
 		this.ownerService = ownerService;
 		this.vetService = vetService;
 		this.petTypeService = petTypeService;
 		this.specialtyService = specialtyService;
+		this.visitService = visitService;
 	}
 
 	@Override
@@ -94,11 +98,20 @@ public class DataLoader implements CommandLineRunner {
 		fionnasPet.setOwner(owner2);
 		fionnasPet.setBirthDate(LocalDate.now());
 		fionnasPet.setName("Just Cat");
-		owner1.getPets().add(fionnasPet);
+		owner2.getPets().add(fionnasPet);
 
 		ownerService.save(owner2);
 
 		System.out.println("Loaded Owners and Pets...");
+
+		Visit catVisit = new Visit();
+		catVisit.setDate(LocalDate.now());
+		catVisit.setDesctiption("Sneezy Kitty");
+		catVisit.setPet(fionnasPet);
+
+		visitService.save(catVisit);
+
+		System.out.println("Loaded Visits...");
 
 		Vet vet1 = new Vet();
 		vet1.setFirstName("Sam");
