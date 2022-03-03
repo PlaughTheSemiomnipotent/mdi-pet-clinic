@@ -1,4 +1,4 @@
-package repositories;
+package com.MDI747.mdipetclinic.repositories;
 
 import org.springframework.data.repository.CrudRepository;
 
