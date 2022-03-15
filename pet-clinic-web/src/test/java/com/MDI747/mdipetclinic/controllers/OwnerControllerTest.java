@@ -1,5 +1,7 @@
 package com.MDI747.mdipetclinic.controllers;
 
+import static org.hamcrest.CoreMatchers.is;
+import static org.mockito.ArgumentMatchers.anyLong;
 import static org.mockito.Mockito.verifyNoInteractions;
 import static org.mockito.Mockito.when;
 import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.get;
@@ -65,6 +67,16 @@ class OwnerControllerTest {
 	void findOwners() throws Exception {
 		mockMvc.perform(get("/owners/find")).andExpect(status().isOk()).andExpect(view().name("notimplemented"));
 		verifyNoInteractions(ownerService);
+	}
+
+	@Test
+	void displayOwner() throws Exception {
+		when(ownerService.findById(anyLong())).thenReturn(Owner.builder().id(1L).build());
+
+		mockMvc.perform(get("/owners/123"))
+				.andExpect(status().isOk())
+				.andExpect(view().name("owners/ownerDetails"))
+				.andExpect(model().attribute("owner", org.hamcrest.Matchers.hasProperty("id", is(1L))));
 	}
 
 }

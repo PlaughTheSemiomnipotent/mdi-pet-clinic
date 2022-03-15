@@ -1,0 +1,4 @@
+-------------------------------------------------------------------------------
+Test set: com.MDI747.mdipetclinic.controllers.OwnerControllerTest
+-------------------------------------------------------------------------------
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 4.782 s - in com.MDI747.mdipetclinic.controllers.OwnerControllerTest
