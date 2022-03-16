@@ -34,7 +34,6 @@ com\MDI747\mdipetclinic\services\map\PetTypeMapService.class
 com\MDI747\mdipetclinic\services\jpa\PetTypeJpaService.class
 com\MDI747\mdipetclinic\services\jpa\VisitJpaService.class
 com\MDI747\mdipetclinic\services\map\OwnerMapService.class
-com\MDI747\mdipetclinic\model\Person$PersonBuilder.class
 com\MDI747\mdipetclinic\repositories\VisitRepository.class
 com\MDI747\mdipetclinic\model\Specialty.class
 com\MDI747\mdipetclinic\repositories\PetRepository.class

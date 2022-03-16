@@ -1,6 +1,7 @@
 package com.MDI747.mdipetclinic.services.jpa;
 
 import java.util.HashSet;
+import java.util.List;
 import java.util.Set;
 
 import org.springframework.context.annotation.Profile;
@@ -57,6 +58,11 @@ public class OwnerJpaService implements OwnerService {
 	@Override
 	public Owner findByLastName(String lastName) {
 		return ownerRepository.findByLastName(lastName);
+	}
+
+	@Override
+	public List<Owner> findAllByLastNameLike(String lastName) {
+		return ownerRepository.findAllByLastNameLike(lastName);
 	}
 
 }
