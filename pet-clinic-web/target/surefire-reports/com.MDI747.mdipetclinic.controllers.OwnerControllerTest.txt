@@ -1,18 +1,4 @@
 -------------------------------------------------------------------------------
 Test set: com.MDI747.mdipetclinic.controllers.OwnerControllerTest
 -------------------------------------------------------------------------------
-Tests run: 8, Failures: 2, Errors: 0, Skipped: 0, Time elapsed: 5.282 s <<< FAILURE! - in com.MDI747.mdipetclinic.controllers.OwnerControllerTest
-processUpdateOwnerForm  Time elapsed: 4.397 s  <<< FAILURE!
-java.lang.AssertionError: View name expected:<redirect:/owners/1> but was:<redirect:/owners/{ownerId}>
-	at com.MDI747.mdipetclinic.controllers.OwnerControllerTest.processUpdateOwnerForm(OwnerControllerTest.java:161)
-
-initUpdateOwnerForm  Time elapsed: 0.154 s  <<< FAILURE!
-org.mockito.exceptions.verification.NoInteractionsWanted: 
-
-No interactions wanted here:
--> at com.MDI747.mdipetclinic.controllers.OwnerControllerTest.initUpdateOwnerForm(OwnerControllerTest.java:152)
-But found these interactions on mock 'ownerService':
--> at com.MDI747.mdipetclinic.controllers.OwnerController.initUpdateOwnerForm(OwnerController.java:95)
-Actually, above is the only interaction with this mock.
-	at com.MDI747.mdipetclinic.controllers.OwnerControllerTest.initUpdateOwnerForm(OwnerControllerTest.java:152)
-
+Tests run: 8, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 7.382 s - in com.MDI747.mdipetclinic.controllers.OwnerControllerTest

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="com.MDI747.mdipetclinic.controllers.OwnerControllerTest" time="7.382" tests="8" errors="0" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="com.MDI747.mdipetclinic.controllers.PetControllerTest" time="0.204" tests="4" errors="0" skipped="0" failures="0">
   <properties>
     <property name="sun.desktop" value="windows"/>
     <property name="awt.toolkit" value="sun.awt.windows.WToolkit"/>
@@ -60,12 +60,8 @@
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
     <property name="java.class.version" value="55.0"/>
   </properties>
-  <testcase name="processUpdateOwnerForm" classname="com.MDI747.mdipetclinic.controllers.OwnerControllerTest" time="6.129"/>
-  <testcase name="findOwners" classname="com.MDI747.mdipetclinic.controllers.OwnerControllerTest" time="0.127"/>
-  <testcase name="processFindFormReturnOne" classname="com.MDI747.mdipetclinic.controllers.OwnerControllerTest" time="0.084"/>
-  <testcase name="initUpdateOwnerForm" classname="com.MDI747.mdipetclinic.controllers.OwnerControllerTest" time="0.169"/>
-  <testcase name="processCreationForm" classname="com.MDI747.mdipetclinic.controllers.OwnerControllerTest" time="0.101"/>
-  <testcase name="initCreationForm" classname="com.MDI747.mdipetclinic.controllers.OwnerControllerTest" time="0.614"/>
-  <testcase name="processFindFormReturnMany" classname="com.MDI747.mdipetclinic.controllers.OwnerControllerTest" time="0.03"/>
-  <testcase name="displayOwner" classname="com.MDI747.mdipetclinic.controllers.OwnerControllerTest" time="0.059"/>
+  <testcase name="processUpdateForm" classname="com.MDI747.mdipetclinic.controllers.PetControllerTest" time="0.034"/>
+  <testcase name="initUpdateForm" classname="com.MDI747.mdipetclinic.controllers.PetControllerTest" time="0.033"/>
+  <testcase name="processCreationForm" classname="com.MDI747.mdipetclinic.controllers.PetControllerTest" time="0.06"/>
+  <testcase name="initCreationForm" classname="com.MDI747.mdipetclinic.controllers.PetControllerTest" time="0.076"/>
 </testsuite>

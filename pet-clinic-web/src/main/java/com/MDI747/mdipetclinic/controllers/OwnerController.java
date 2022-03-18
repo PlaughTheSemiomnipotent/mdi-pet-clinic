@@ -59,7 +59,7 @@ public class OwnerController {
 		}
 		
 		// find owners by last name
-		List<Owner> results = ownerService.findAllByLastNameLike('%' + owner.getLastName() + '%');
+		List<Owner> results = ownerService.findAllByLastNameLike("%" + owner.getLastName() + "%");
 		
 		if(results.isEmpty()) {
 			result.rejectValue("lastName", "not found", "not found");
@@ -69,7 +69,7 @@ public class OwnerController {
 			owner = results.get(0);
 			return "redirect:/owners/" + owner.getId();
 		} else {
-			model.addAttribute("selections", results);
+			model.addAttribute("listOwners", results);
 			return "owners/ownersList";
 		}
 	}
