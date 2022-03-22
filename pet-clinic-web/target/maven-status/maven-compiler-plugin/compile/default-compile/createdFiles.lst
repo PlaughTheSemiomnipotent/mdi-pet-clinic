@@ -6,4 +6,5 @@ com\MDI747\mdipetclinic\bootstrap\DataLoader.class
 com\MDI747\mdipetclinic\controllers\OwnerController.class
 com\MDI747\mdipetclinic\formatters\PetTypeFormatter.class
 com\MDI747\mdipetclinic\controllers\PetController.class
+com\MDI747\mdipetclinic\controllers\PetController$1.class
 com\MDI747\mdipetclinic\controllers\VetController.class
