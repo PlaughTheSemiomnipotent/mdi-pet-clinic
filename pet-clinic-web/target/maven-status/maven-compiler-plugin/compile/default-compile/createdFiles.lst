@@ -1,6 +1,7 @@
 com\MDI747\mdipetclinic\controllers\VisitController.class
 com\MDI747\mdipetclinic\controllers\IndexController.class
 com\MDI747\mdipetclinic\MdiPetClinicApplication.class
+com\MDI747\mdipetclinic\controllers\VisitController$1.class
 com\MDI747\mdipetclinic\bootstrap\DataLoader.class
 com\MDI747\mdipetclinic\controllers\OwnerController.class
 com\MDI747\mdipetclinic\formatters\PetTypeFormatter.class
